@@ -20,10 +20,12 @@ importers:
       install: ^0.13.0
       npm: ^8.19.2
       npx: ^10.2.2
+      prisma: ^4.3.1
       react: ^18.2.0
       react-dom: ^18.0.0
       react-scripts: 5.0.1
       todo-list: link:packages/web/todo
+      ts-node: ^10.0.0
       typescript: ^4.8.3
       uuid: ^9.0.0
       web-vitals: ^2.1.4
@@ -44,10 +46,12 @@ importers:
       install: 0.13.0
       npm: 8.19.2
       npx: 10.2.2
+      prisma: 4.3.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-scripts: 5.0.1_bn5ss3l6ueifap6taer2byislu
+      react-scripts: 5.0.1_sdz2nkrxubj3kh2tdieese5vie
       todo-list: link:packages/web/todo
+      ts-node: 10.9.1_ao52im6kiihokc7tdj7weudhra
       typescript: 4.8.3
       uuid: 9.0.0
       web-vitals: 2.1.4
@@ -1876,7 +1880,7 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /@jest/core/27.5.1:
+  /@jest/core/27.5.1_ts-node@10.9.1:
     resolution: {integrity: sha512-AK6/UTrvQD0Cd24NSqmIA6rKsu0tKIxfiCducZvqxYdmMisOYAsdItspT+fQDQYARPf8XgjAFZi0ogW2agH5nQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
@@ -1897,7 +1901,7 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.10
       jest-changed-files: 27.5.1
-      jest-config: 27.5.1
+      jest-config: 27.5.1_ts-node@10.9.1
       jest-haste-map: 27.5.1
       jest-message-util: 27.5.1
       jest-regex-util: 27.5.1
@@ -2696,6 +2700,11 @@ packages:
       source-map: 0.7.4
       webpack: 5.74.0
       webpack-dev-server: 4.11.1_webpack@5.74.0
+    dev: true
+
+  /@prisma/engines/4.3.1:
+    resolution: {integrity: sha512-4JF/uMaEDAPdcdZNOrnzE3BvrbGpjgV0FcPT3EVoi6I86fWkloqqxBt+KcK/+fIRR0Pxj66uGR9wVH8U1Y13JA==}
+    requiresBuild: true
     dev: true
 
   /@rollup/plugin-babel/5.3.1_r56fldxoyazzliugjcx2ns4pma:
@@ -5581,7 +5590,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 5.38.0_wsb62dxj2oqwgas4kadjymcmry
       '@typescript-eslint/experimental-utils': 5.38.0_irgkl5vooow2ydyo6aokmferha
       eslint: 8.23.1
-      jest: 27.5.1
+      jest: 27.5.1_ts-node@10.9.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -7077,7 +7086,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli/27.5.1:
+  /jest-cli/27.5.1_ts-node@10.9.1:
     resolution: {integrity: sha512-Hc6HOOwYq4/74/c62dEE3r5elx8wjYqxY0r0G/nFrLDPMFRu6RA/u8qINOIkvhxG7mMQ5EJsOGfRpI8L6eFUVw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -7087,14 +7096,14 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 27.5.1
+      '@jest/core': 27.5.1_ts-node@10.9.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.10
       import-local: 3.1.0
-      jest-config: 27.5.1
+      jest-config: 27.5.1_ts-node@10.9.1
       jest-util: 27.5.1
       jest-validate: 27.5.1
       prompts: 2.4.2
@@ -7135,7 +7144,7 @@ packages:
       - ts-node
     dev: true
 
-  /jest-config/27.5.1:
+  /jest-config/27.5.1_ts-node@10.9.1:
     resolution: {integrity: sha512-5sAsjm6tGdsVbW9ahcChPAFCk4IlkQUknH5AvKjuLTSlcO/wCZKyFdn7Rg0EkC+OGgWODEy2hDpWB1PgzH0JNA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
@@ -7168,6 +7177,7 @@ packages:
       pretty-format: 27.5.1
       slash: 3.0.0
       strip-json-comments: 3.1.1
+      ts-node: 10.9.1_ao52im6kiihokc7tdj7weudhra
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -7893,7 +7903,7 @@ packages:
     dependencies:
       ansi-escapes: 4.3.2
       chalk: 4.1.2
-      jest: 27.5.1
+      jest: 27.5.1_ts-node@10.9.1
       jest-regex-util: 28.0.2
       jest-watcher: 28.1.3
       slash: 4.0.0
@@ -7955,7 +7965,7 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest/27.5.1:
+  /jest/27.5.1_ts-node@10.9.1:
     resolution: {integrity: sha512-Yn0mADZB89zTtjkPJEXwrac3LHudkQMR+Paqa8uxJHCBr9agxztUifWCyiYrjhMPBoUVBjyny0I7XH6ozDr7QQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -7965,9 +7975,9 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 27.5.1
+      '@jest/core': 27.5.1_ts-node@10.9.1
       import-local: 3.1.0
-      jest-cli: 27.5.1
+      jest-cli: 27.5.1_ts-node@10.9.1
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -9311,7 +9321,7 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-load-config/3.1.4_postcss@8.4.16:
+  /postcss-load-config/3.1.4_57znarxsqwmnneadci5z5fd5gu:
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -9325,6 +9335,7 @@ packages:
     dependencies:
       lilconfig: 2.0.6
       postcss: 8.4.16
+      ts-node: 10.9.1_ao52im6kiihokc7tdj7weudhra
       yaml: 1.10.2
     dev: true
 
@@ -9868,6 +9879,15 @@ packages:
       react-is: 18.2.0
     dev: true
 
+  /prisma/4.3.1:
+    resolution: {integrity: sha512-90xo06wtqil76Xsi3mNpc4Js3SdDRR5g4qb9h+4VWY4Y8iImJY6xc3PX+C9xxTSt1lr0Q89A0MLkJjd8ax6KiQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.3.1
+    dev: true
+
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
@@ -10054,7 +10074,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-scripts/5.0.1_bn5ss3l6ueifap6taer2byislu:
+  /react-scripts/5.0.1_sdz2nkrxubj3kh2tdieese5vie:
     resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -10087,7 +10107,7 @@ packages:
       fs-extra: 10.1.0
       html-webpack-plugin: 5.5.0_webpack@5.74.0
       identity-obj-proxy: 3.0.0
-      jest: 27.5.1
+      jest: 27.5.1_ts-node@10.9.1
       jest-resolve: 27.5.1
       jest-watch-typeahead: 1.1.0_jest@27.5.1
       mini-css-extract-plugin: 2.6.1_webpack@5.74.0
@@ -10107,7 +10127,7 @@ packages:
       semver: 7.3.7
       source-map-loader: 3.0.1_webpack@5.74.0
       style-loader: 3.3.1_webpack@5.74.0
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_ts-node@10.9.1
       terser-webpack-plugin: 5.3.6_webpack@5.74.0
       typescript: 4.8.3
       webpack: 5.74.0
@@ -11053,7 +11073,7 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /tailwindcss/3.1.8:
+  /tailwindcss/3.1.8_ts-node@10.9.1:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -11074,7 +11094,7 @@ packages:
       postcss: 8.4.16
       postcss-import: 14.1.0_postcss@8.4.16
       postcss-js: 4.0.0_postcss@8.4.16
-      postcss-load-config: 3.1.4_postcss@8.4.16
+      postcss-load-config: 3.1.4_57znarxsqwmnneadci5z5fd5gu
       postcss-nested: 5.0.6_postcss@8.4.16
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
