@@ -1,5 +1,7 @@
 import { Body, Controller, Get, Post, Request } from '@nestjs/common';
 import { AppService } from './app.service';
+import { PrismaClient } from '@prisma/client';
+
 
 @Controller()
 export class AppController {
