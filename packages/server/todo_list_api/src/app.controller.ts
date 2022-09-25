@@ -1,7 +1,8 @@
 import { Body, Controller, Get, Post, Request } from '@nestjs/common';
 import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
-import { TodoDTO } from './app.dto';
+// import { TodoDTO } from './app.dto';
+import { TodoDTO } from './../../../tools/todo_list_dto/todo_list.dto';
 
 const prisma = new PrismaClient();
 
