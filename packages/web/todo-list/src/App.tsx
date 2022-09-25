@@ -3,6 +3,20 @@ import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import { Footer } from "./components/Footer";
 import { TodoItem, TodoModel } from "./models/todoModel";
+import axios from 'axios';
+
+async function postData(url = '', data = {}) {
+  const response = await fetch(url, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    // body: JSON.parse(data) 
+    body: JSON.stringify(data) 
+  });
+  return response;
+}
 
 const KeyCodes = {
   Enter: "Enter",
@@ -26,16 +40,38 @@ function App({ model }: Props) {
 
     }
     model.addTodo(val);
-    console.log(val)
-    fetch('http://localhost:9090/post_data', {
+    console.log(val);
+    // postData('http://localhost:9080/post_data', {'content': val}) 
+    // .then((data) => {
+    //   console.log(data); // JSON data parsed by `data.json()` call
+    // });
+    // console.log(JSON.stringify({'content': val}))
+    var details = {
+      'content': val
+    }
+    var formBody = [];
+    for (var property in details) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(details[property]);
+      formBody.push(encodedKey + "=" + encodedValue);
+    }
+    let post_content = formBody.join("&");
+    console.log(post_content)
+
+    let res = fetch('http://localhost:9080/post_data', {
       mode: 'no-cors',
       method: 'POST',
       headers: new Headers({
         'Content-Type': 'application/x-www-form-urlencoded',
+        // 'Content-Type': 'application/json',
       }),
-      body: "param1="+val
-    })
-    console.log(val)
+      body: post_content
+    }).then(function (response: any) {
+        console.log(response);
+    }).catch(function (error: any) {
+        console.log(error);
+    });
+    // console.log(res)
     setNewTodo("");
   }
 
